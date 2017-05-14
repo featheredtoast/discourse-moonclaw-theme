@@ -1,0 +1,157 @@
+.list-controls,
+.topic-status-info
+{
+    background-image: url($borders);
+}
+#create-topic {
+    background-image: url($button_topic_new);
+    color: rgba(0, 0, 0, 0.0);
+    height: 20px;
+    width: 86px;
+    margin-top: 6px;
+}
+button.create.reply,
+button.create.reply.d-hover,
+#topic-footer-buttons>button.create{
+    background-image: url($button_topic_reply);
+    color: rgba(0, 0, 0, 0.0) !important;
+    height: 20px;
+    width: 86px;
+    margin-top: 6px;
+    padding-top: 2px;
+}
+
+//not black backgrounds are back for not backgroundy things.
+.has-description, .no-description, 
+.user-main .about .secondary,
+.user-right .user-stream .item,
+#reply-control,
+select,
+.topic-list td,
+.category-list-item.category,
+.topic-list>tbody>tr>td,
+.topic-post
+{
+    background-color: #353535;
+}
+.topic-post:nth-child(odd),
+.topic-list>tbody>tr>td:nth-child(odd){
+    background-color: #202020;
+}
+
+.user-main .staff-counters div a
+{
+    color: #efefef;
+}
+.topic-list:not(.categories)>thead>tr>th,
+aside.quote .title, blockquote,
+.category-list>thead,
+.quote aside .quote, .quote aside .title, .quote aside blockquote, .quote aside .onebox, .quote aside .onebox-result
+{
+    background-color: #202020;
+}
+.topic-list .sortable
+.d-header .icons .icon,
+.topic-list:not(.categories)>thead>tr>th
+{
+    color: #FFCC33;
+}
+.topic-list .sortable:hover,
+.drop-down-visible .d-header .icons .active .icon,
+.d-header .icons .icon:hover {
+    color: #FFCC33;
+    background-color: #353535;
+}
+
+//fade these elements to the background
+//Image preview in black rather than white for a less glaring experience
+//deleted posts count should match the 'danger' button text color.
+/*
+staff counter background is by default white to match default background color
+change background color to black to match, change text color to white
+*/
+.uploaded-image-preview,
+.deleted-posts,
+.user-main .staff-counters,
+.topic-list, .topic-list>tbody>tr
+{
+  color: #efefef;
+  background-color: #202020;
+}
+
+/**
+BOARDERS
+**/
+
+.topic-status-info {
+    border-top: none;
+}
+
+.topic-avatar,
+#topic-closing-info,
+.topic-body,
+.small-action,
+{
+    border: none;
+}
+.topic-body {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.topic-post,
+.topic-list > tbody > tr,
+.category-list tbody tr{
+    border-bottom: 1px solid black;
+}
+.topic-list>tbody>tr:first-of-type,
+.category-list tbody tr:first-of-type {
+  border-top: 1px solid #FFCC33;
+}
+aside.quote .title, blockquote,
+.quote aside .quote, .quote aside .title, .quote aside blockquote, .quote aside .onebox, .quote aside .onebox-result{
+    border-left-color: #FFCC33;
+}
+.nav-pills>li.active>a, .nav-pills>li>a.active,
+.nav-pills>li>a:hover {
+  color: #FFCC33;
+  background-color: transparent;
+}
+.nav-pills>li.active>a, .nav-pills>li>a.active {
+    background-color: transparent;
+}
+.spinner {
+    border:3px solid #FFCC33;
+    border-right-color: transparent;
+}
+.topic-list .topic-list-item-separator td {
+    border-bottom: 1px solid #046;
+}
+.topic-list .topic-list-item-separator td span {
+    background-color: #353535;
+    color: #999;
+}
+
+/**
+Margins/Padding
+**/
+
+//add some padding to posts so that avatars are not on the side
+.topic-avatar
+{
+    padding-right: 10px;
+}
+.topic-post
+{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.more-topics .btn.pull-right
+{
+    margin-right: 20px;
+}
+#list-area {
+    margin-bottom: 0px;
+}
+.small-action {
+    padding-left: 56px;
+}
