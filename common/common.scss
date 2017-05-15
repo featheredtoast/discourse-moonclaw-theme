@@ -23,7 +23,9 @@ nav.post-controls button.create
 .list-controls {
     padding-top: 9px;
 }
-.list-controls .category-breadcrumb li.bullet>.badge-category {
+.list-controls .category-breadcrumb li.bullet>.badge-category,
+.list-controls .nav-pills>li
+{
     background: transparent !important;
 }
 
