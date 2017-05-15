@@ -4,6 +4,10 @@
 {
     background-image: url($borders);
 }
+#reply-control
+{
+    background-color: #202020;
+}
 #create-topic {
     background-image: url($button_topic_new);
     color: rgba(0, 0, 0, 0.0);
@@ -26,7 +30,6 @@ button.create.reply.d-hover,
 .has-description, .no-description, 
 .user-main .about .secondary,
 .user-right .user-stream .item,
-#reply-control,
 select,
 .topic-list td,
 .category-list-item.category,
