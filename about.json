@@ -18,7 +18,5 @@
     },
     "assets": {
         "borders": "assets/borders.jpg",
-        "button_topic_new": "assets/button_topic_new.jpg",
-        "button_topic_reply": "assets/button_topic_reply.jpg"
     }
 }

@@ -1,9 +1,20 @@
 .list-controls,
 .topic-status-info,
-#reply-control.open .grippie
+#reply-control.open .grippie,
+.btn
 {
     background: url($borders) center repeat-x;
     background-size: auto 100%;
+}
+.btn,
+.btn:hover,
+button.create.reply,
+button.create.reply.d-hover,
+#create-topic,
+nav.post-controls button.create
+{
+    background: url($borders) center repeat-x;
+    color: #FFCC33;
 }
 #reply-control
 {
@@ -14,23 +25,6 @@
 }
 .list-controls .category-breadcrumb li.bullet>.badge-category {
     background: transparent !important;
-}
-#create-topic {
-    background-image: url($button_topic_new);
-    color: rgba(0, 0, 0, 0.0);
-    height: 20px;
-    width: 86px;
-    margin-top: 6px;
-}
-button.create.reply,
-button.create.reply.d-hover,
-#topic-footer-buttons>button.create{
-    background-image: url($button_topic_reply);
-    color: rgba(0, 0, 0, 0.0) !important;
-    height: 20px;
-    width: 86px;
-    margin-top: 6px;
-    padding-top: 2px;
 }
 
 //not black backgrounds are back for not backgroundy things.
