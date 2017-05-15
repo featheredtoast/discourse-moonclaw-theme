@@ -2,7 +2,8 @@
 .topic-status-info,
 #reply-control.open .grippie
 {
-    background-image: url($borders);
+    background: url($borders) center repeat-x;
+    background-size: auto 100%;
 }
 #reply-control
 {
