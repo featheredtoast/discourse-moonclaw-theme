@@ -8,6 +8,9 @@
 {
     background-color: #202020;
 }
+.list-controls .category-breadcrumb li.bullet>.badge-category {
+    background: transparent !important;
+}
 #create-topic {
     background-image: url($button_topic_new);
     color: rgba(0, 0, 0, 0.0);
