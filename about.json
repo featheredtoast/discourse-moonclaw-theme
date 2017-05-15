@@ -5,10 +5,10 @@
     "color_schemes": {
         "Moonclaw": {
             "primary": "ffffff",
-            "secondary": "202020",
-            "tertiary": "006699",
+            "secondary": "000000",
+            "tertiary": "FFCC33",
             "quaternary": "006699",
-            "header_background": "000000",
+            "header_background": "202020",
             "header_primary": "FFCC33",
             "highlight": "FFCC33",
             "danger": "993200",
