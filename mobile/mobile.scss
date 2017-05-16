@@ -1,14 +1,16 @@
 #reply-control {
-    border-top: 1px solid #FFCC33;
+  border-top: 1px solid #FFCC33;
 }
 .list-controls {
-    padding-top: 4px;
+  padding-top: 4px;
 }
 .topic-post article {
-    border-top: none;
-    
+  border-top: none;    
 }
 .topic-body {
-    border-left: none;
-    border-right: none;
+  border-left: none;
+  border-right: none;
+}
+#topic-footer-buttons {
+  border-top: none;
 }
