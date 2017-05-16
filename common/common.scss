@@ -39,10 +39,6 @@ select,
 .topic-list>tbody>tr>td,
 .topic-post
 {
-    background-color: #353535;
-}
-.topic-post:nth-child(odd),
-.topic-list>tbody>tr>td:nth-child(-n+3){
     background-color: #202020;
 }
 
