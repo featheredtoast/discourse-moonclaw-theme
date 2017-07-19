@@ -4,6 +4,11 @@
   margin-right: 320px;
   min-width: 712px;
 }
+@media (max-width: 1124px) {
+  .topic-body {
+    border-left: 1px solid transparent;
+  }
+}
 .topic-status-info {
   max-width: 789px;
 }
