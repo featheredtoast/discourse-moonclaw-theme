@@ -39,6 +39,15 @@ select,
     background-color: $header_background;
 }
 
+.topic-post>article[id$="1"],
+.topic-post>article[id$="3"],
+.topic-post>article[id$="5"],
+.topic-post>article[id$="7"],
+.topic-post>article[id$="9"]
+{
+    background-color: $quaternary;
+}
+
 //tiger stripes, horizontal...
 .num.posts-map.posts,
 .num.views,
