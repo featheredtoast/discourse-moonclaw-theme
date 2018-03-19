@@ -67,7 +67,7 @@ aside.quote .title, blockquote,
 .drop-down-visible .d-header .icons .active .icon,
 .d-header .icons .icon:hover {
     color: $tertiary;
-    background-color: #353535;
+    background-color: $quaternary;
 }
 
 //fade these elements to the background
@@ -133,7 +133,7 @@ aside.quote .title, blockquote,
     border-bottom: 1px solid #046;
 }
 .topic-list .topic-list-item-separator td span {
-    background-color: #353535;
+    background-color: $quaternary;
     color: #999;
 }
 
