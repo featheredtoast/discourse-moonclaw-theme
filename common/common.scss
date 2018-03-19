@@ -6,6 +6,9 @@
     background: url($borders) center repeat-x;
     background-size: auto 100%;
 }
+#reply-control .d-editor-button-bar .btn {
+    padding: 6px 12px;
+}
 .btn,
 .btn:hover,
 button.create.reply,
