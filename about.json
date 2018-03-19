@@ -4,7 +4,7 @@
     "license_url": "https://github.com/featheredtoast/discourse-moonclaw-theme/blob/master/LICENSE.txt",
     "color_schemes": {
         "Moonclaw": {
-            "primary": "ffffff",
+            "primary": "efefef",
             "secondary": "000000",
             "tertiary": "FFCC33",
             "quaternary": "FFCC33",
