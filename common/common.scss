@@ -16,10 +16,6 @@ nav.post-controls button.create
     background: url($borders) center repeat-x;
     color: $tertiary;
 }
-#reply-control
-{
-    background-color: $header_background;
-}
 .list-controls {
     padding-top: 16px;
 }
@@ -37,10 +33,20 @@ select,
 .topic-list td,
 .category-list-item.category,
 .topic-list>tbody>tr>td,
-.topic-post
+.topic-post>article,
+#reply-control
 {
     background-color: $header_background;
 }
+
+//tiger stripes, horizontal...
+.num.posts-map.posts,
+.num.views,
+.num.age.activity {
+    background-color: $quaternary;
+}
+
+//tiger stripes, vertical...
 
 .user-main .staff-counters div a
 {
@@ -87,7 +93,7 @@ change background color to black to match, change text color to white
 }
 
 /**
-BOARDERS
+BORDERS
 **/
 
 .topic-status-info {
@@ -104,7 +110,7 @@ BOARDERS
 .topic-body {
     border-left: 1px solid black;
 }
-.topic-post,
+.topic-post>article,
 .topic-list > tbody > tr,
 .category-list tbody tr{
     border-bottom: 1px solid black;

@@ -1,8 +1,7 @@
-.topic-post
-{
-  padding-left: 20px;
-  margin-right: 320px;
-  min-width: 712px;
+.topic-post>article {
+    padding-left: 20px;
+    margin-right: 320px;
+    min-width: 712px;
 }
 @media (max-width: 1124px) {
   .topic-body {
