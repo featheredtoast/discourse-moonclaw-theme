@@ -4,6 +4,9 @@
 {
     color: #069
 }
+.topic-list-item.visited a.title:not(.badge-notification) {
+    color: darken(#069, 10%);
+}
 
 .select-kit.combo-box.category-drop .category-drop-header,
 #navigation-bar,
