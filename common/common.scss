@@ -2,13 +2,14 @@
 .category-list .category-name,
 .latest-topic-list-item .main-link a.title
 {
-    color: #069
+    color: lighten(#069, 10%);
 }
 .topic-list-item.visited a.title:not(.badge-notification) {
-    color: darken(#069, 10%);
+    color: #069;
 }
 
 .select-kit.combo-box.category-drop .category-drop-header,
+.select-kit.combo-box.tag-drop .tag-drop-header,
 #navigation-bar,
 .topic-status-info,
 .topic-list thead tr th,
@@ -139,6 +140,10 @@ BORDERS
 
 .topic-status-info {
     border-top: none;
+}
+
+.select-kit-collection {
+    border: 1px solid $tertiary;
 }
 
 .topic-avatar,
