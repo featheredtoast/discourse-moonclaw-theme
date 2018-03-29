@@ -1,11 +1,17 @@
 .select-kit.combo-box.category-drop .category-drop-header,
 #navigation-bar,
 .topic-status-info,
+.topic-list thead tr th,
+.category-list thead tr th,
+.table-heading,
 #reply-control.open .grippie,
 .btn
 {
     background: url($borders) center repeat-x;
 }
+.topic-list thead tr th,
+.category-list thead tr th,
+.table-heading,
 #reply-control.open .grippie {
     background-size: auto 100%;
 }
@@ -58,7 +64,9 @@ select,
 //tiger stripes, horizontal...
 .num.posts-map.posts,
 .num.views,
-.num.age.activity {
+.num.age.activity,
+.category-list.with-topics .latest
+{
     background-color: $quaternary;
 }
 
