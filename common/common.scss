@@ -1,9 +1,12 @@
-.list-controls,
+.select-kit.combo-box.category-drop .category-drop-header,
+#navigation-bar,
 .topic-status-info,
 #reply-control.open .grippie,
 .btn
 {
     background: url($borders) center repeat-x;
+}
+#reply-control.open .grippie {
     background-size: auto 100%;
 }
 #reply-control .d-editor-button-bar .btn {
@@ -35,6 +38,7 @@ nav.post-controls button.create
 select,
 .topic-list td,
 .category-list-item.category,
+.latest-topic-list,
 .topic-list>tbody>tr>td,
 .topic-post>article,
 #reply-control
@@ -56,6 +60,13 @@ select,
 .num.views,
 .num.age.activity {
     background-color: $quaternary;
+}
+
+//no tiger stripes on topic list
+.latest-topic-list .num.posts-map.posts,
+.latest-topic-list .num.views,
+.latest-topic-list .num.age.activity {
+    background-color: $header_background;
 }
 
 //tiger stripes, vertical...
