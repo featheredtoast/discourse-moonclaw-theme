@@ -17,6 +17,8 @@
         }
     },
     "assets": {
-        "borders": "assets/borders.jpg"
+      "borders": "assets/borders.jpg",
+      "read": "assets/forum_read.gif",
+      "unread": "assets/forum_unread.gif"
     }
 }

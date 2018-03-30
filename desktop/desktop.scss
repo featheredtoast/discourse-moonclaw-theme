@@ -26,3 +26,18 @@
 .topic-status-info {
   max-width: 789px;
 }
+
+.topic-list-item .main-link::before {
+    content: '';
+    display: inline-block;
+    height: 35px;
+    width: 50px;
+    background-image: url($unread);
+}
+.topic-list-item.visited .main-link::before {
+    content: '';
+    display: inline-block;
+    height: 35px;
+    width: 50px;
+    background-image: url($read);
+}
