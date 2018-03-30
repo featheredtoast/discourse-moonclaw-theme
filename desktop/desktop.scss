@@ -27,11 +27,21 @@
   max-width: 789px;
 }
 
+.topic-list-item .main-link .link-top-line {
+    display: inline-block;
+    position: relative;
+    bottom: 12px;
+}
+
+.topic-list-item .discourse-tags {
+    padding-left: 55px;
+}
 .topic-list-item .main-link::before {
     content: '';
     display: inline-block;
     height: 35px;
     width: 50px;
+    background-repeat: no-repeat;
     background-image: url($unread);
 }
 .topic-list-item.visited .main-link::before {
