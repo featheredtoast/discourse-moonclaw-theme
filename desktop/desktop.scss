@@ -27,6 +27,10 @@
   max-width: 789px;
 }
 
+.topic-list>tbody>tr:first-of-type{
+    border-top: none;
+}
+
 .topic-list-item .main-link .link-top-line {
     display: inline-block;
     position: relative;
