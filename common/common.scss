@@ -4,7 +4,8 @@
 {
     color: lighten(#069, 10%);
 }
-.topic-list-item.visited a.title:not(.badge-notification) {
+.topic-list-item.visited a.title:not(.badge-notification), .latest-topic-list-item.visited a.title:not(.badge-notification), .category-topic-link.visited a.title:not(.badge-notification)
+{
     color: #069;
 }
 
@@ -72,21 +73,6 @@ select,
     background-color: $quaternary;
 }
 
-//tiger stripes, horizontal...
-.num.posts-map.posts,
-.num.views,
-.num.age.activity,
-.category-list.with-topics .latest
-{
-    background-color: $quaternary;
-}
-
-//no tiger stripes on topic list
-.latest-topic-list .num.posts-map.posts,
-.latest-topic-list .num.views,
-.latest-topic-list .num.age.activity {
-    background-color: $header_background;
-}
 
 //tiger stripes, vertical...
 
@@ -107,9 +93,14 @@ aside.quote .title, blockquote,
 {
     color: $tertiary;
 }
-.d-header
-{
-  border-bottom: 3px solid black;
+.d-header::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: url($borders) center repeat-x;
+    background-size: auto 100%;
 }
 .topic-list .sortable:hover,
 .drop-down-visible .d-header .icons .active .icon,
@@ -158,12 +149,10 @@ BORDERS
 }
 .topic-post>article,
 .topic-list > tbody > tr,
-.category-list tbody tr{
+.category-list tbody tr,
+.latest-topic-list-item
+{
     border-bottom: 1px solid black;
-}
-.topic-list>tbody>tr:first-of-type,
-.category-list tbody tr:first-of-type {
-  border-top: 1px solid $tertiary;
 }
 aside.quote .title, blockquote,
 .quote aside .quote, .quote aside .title, .quote aside blockquote, .quote aside .onebox, .quote aside .onebox-result{

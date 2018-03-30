@@ -1,3 +1,18 @@
+//tiger stripes, horizontal...
+.num.posts-map.posts,
+.num.views,
+.num.age.activity,
+.category-list.with-topics .latest
+{
+    background-color: $quaternary;
+}
+
+//no tiger stripes on topic list
+.latest-topic-list .num.posts-map.posts,
+.latest-topic-list .num.views,
+.latest-topic-list .num.age.activity {
+    background-color: $header_background;
+}
 .topic-post>article {
     padding-left: 20px;
     margin-right: 320px;
