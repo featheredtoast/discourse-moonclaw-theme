@@ -17,7 +17,7 @@
 #topic-progress .bg {
   background-image: url($borders);
 }
-.topic-list>tbody>tr:first-of-type,
+.topic-list>tbody,
 .category-list tbody tr:first-of-type {
     border-top: 1px solid $tertiary;
 }
