@@ -18,7 +18,13 @@
     },
     "assets": {
       "borders": "assets/borders.jpg",
-      "read": "assets/forum_read.gif",
-      "unread": "assets/forum_unread.gif"
+      "read": "assets/topic_read.gif",
+      "unread": "assets/topic_unread.gif",
+      "lock_read": "assets/topic_read_locked.gif",
+      "lock_unread": "assets/topic_unread_locked.gif",
+      "sticky_read": "assets/sticky_read.gif",
+      "sticky_unread": "assets/sticky_unread.gif",
+      "lock_sticky_read": "assets/sticky_read_locked.gif",
+      "lock_sticky_unread": "assets/sticky_unread_locked.gif"
     }
 }
