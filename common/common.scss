@@ -2,11 +2,11 @@
 .category-list .category-name,
 .latest-topic-list-item .main-link a.title
 {
-    color: lighten(#069, 10%);
+    color: $header_primary;
 }
 .topic-list-item.visited a.title:not(.badge-notification), .latest-topic-list-item.visited a.title:not(.badge-notification), .category-topic-link.visited a.title:not(.badge-notification)
 {
-    color: #069;
+    color: darken($header_primary, 10%);
 }
 
 .select-kit.combo-box.category-drop .category-drop-header,
