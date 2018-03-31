@@ -26,7 +26,8 @@
 .topic-status-info {
   max-width: 789px;
 }
-.topic-list>tbody
+.topic-list>tbody,
+.category-list tbody tr:first-of-type
 {
     border-top: none;
 }
