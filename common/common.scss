@@ -99,8 +99,7 @@ aside.quote .title, blockquote,
     position: absolute;
     height: 5px;
     width: 100%;
-    background: url($borders) center repeat-x;
-    background-size: auto 100%;
+    background: url($borders) top repeat-x;
 }
 .topic-list .sortable:hover,
 .drop-down-visible .d-header .icons .active .icon,
