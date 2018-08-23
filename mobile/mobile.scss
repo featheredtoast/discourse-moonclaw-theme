@@ -5,7 +5,7 @@
   padding-top: 4px;
 }
 .topic-post article {
-  border-top: none;    
+  border-top: none;
 }
 .topic-body {
   border-left: none;
@@ -20,4 +20,10 @@
 .topic-list>tbody,
 .category-list {
     border-top: 1px solid $tertiary;
+}
+#navigation-bar {
+  margin-bottom: 10px;
+}
+.list-controls .nav-pills .navigation-toggle {
+  margin-bottom: 0;
 }
