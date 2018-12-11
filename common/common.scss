@@ -1,3 +1,7 @@
+.d-header::after {
+    align-self: flex-end;
+}
+
 .topic-list .main-link a.title,
 .category-list .category-name,
 .latest-topic-list-item .main-link a.title
