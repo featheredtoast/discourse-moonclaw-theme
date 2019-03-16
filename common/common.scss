@@ -36,21 +36,32 @@
 }
 .btn,
 .btn:hover,
-button.create.reply,
-button.create.reply.d-hover,
+.discourse-no-touch .btn:hover, .discourse-no-touch .btn.btn-hover,
+.discourse-no-touch .btn-primary:hover, .discourse-no-touch .btn-primary.btn-hover,
+.discourse-no-touch .btn .d-icon,
+.discourse-no-touch .btn:hover .d-icon, .discourse-no-touch .btn.btn-hover .d-icon,
 #create-topic,
-nav.post-controls button.create
+nav.post-controls button.create,
+nav.post-controls button.create .d-icon,
 {
     background: url($borders) center repeat-x;
     color: $tertiary;
 }
+.discourse-no-touch .btn-flat:hover .d-icon
+{
+  color: $tertiary;
+}
 .list-controls {
     padding-top: 16px;
+    .combo-box .combo-box-header {
+      border: none;
+    }
 }
 .list-controls .category-breadcrumb li.bullet>.badge-category,
 .list-controls .nav-pills>li
 {
     background: transparent !important;
+    border: none;
 }
 
 //not black backgrounds are back for not backgroundy things.
