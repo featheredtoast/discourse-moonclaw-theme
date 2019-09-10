@@ -14,12 +14,9 @@
 #topic-footer-buttons {
   border-top: none;
 }
-#topic-progress .bg {
-  background-image: url($borders);
-}
-.topic-list>tbody,
+.topic-list > tbody,
 .category-list {
-    border-top: 1px solid $tertiary;
+  border-top: 1px solid $tertiary;
 }
 #navigation-bar {
   margin-bottom: 10px;

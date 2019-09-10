@@ -1,16 +1,24 @@
+@mixin moonclaw-background() {
+  border: 1px solid transparent;
+  border-image-source: url($borders);
+  border-image-slice: 3 1 fill;
+  border-image-outset: 0;
+  border-image-repeat: repeat stretch;
+}
+
 .d-header::after {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 .topic-list .main-link a.title,
 .category-list .category-name,
-.latest-topic-list-item .main-link a.title
-{
-    color: $header_primary;
+.latest-topic-list-item .main-link a.title {
+  color: $header_primary;
 }
-.topic-list-item.visited a.title:not(.badge-notification), .latest-topic-list-item.visited a.title:not(.badge-notification), .category-topic-link.visited a.title:not(.badge-notification)
-{
-    color: darken($header_primary, 10%);
+.topic-list-item.visited a.title:not(.badge-notification),
+.latest-topic-list-item.visited a.title:not(.badge-notification),
+.category-topic-link.visited a.title:not(.badge-notification) {
+  color: darken($header_primary, 10%);
 }
 
 .select-kit.combo-box.category-drop .category-drop-header,
@@ -21,105 +29,100 @@
 .category-list thead tr th,
 .table-heading,
 #reply-control.open .grippie,
-.btn
-{
-    background: url($borders) center repeat-x;
+.btn,
+.btn:hover,
+.discourse-no-touch .btn:hover,
+.discourse-no-touch .btn.btn-hover,
+.discourse-no-touch .btn-primary:hover,
+.discourse-no-touch .btn-primary.btn-hover,
+#topic-progress .bg,
+.d-header {
+  @include moonclaw-background;
 }
 .topic-list thead tr th,
 .category-list thead tr th,
 .table-heading,
 #reply-control.open .grippie {
-    background-size: auto 100%;
+  background-size: auto 100%;
 }
 #reply-control .d-editor-button-bar .btn {
-    padding: 6px 12px;
+  padding: 6px 12px;
 }
-.btn,
-.btn:hover,
-.discourse-no-touch .btn:hover, .discourse-no-touch .btn.btn-hover,
-.discourse-no-touch .btn-primary:hover, .discourse-no-touch .btn-primary.btn-hover,
+
 .discourse-no-touch .btn .d-icon,
-.discourse-no-touch .btn:hover .d-icon, .discourse-no-touch .btn.btn-hover .d-icon,
+.discourse-no-touch .btn:hover .d-icon,
+.discourse-no-touch .btn.btn-hover .d-icon,
+.d-button-label,
 #create-topic,
 nav.post-controls button.create,
-nav.post-controls button.create .d-icon,
-{
-    background: url($borders) center repeat-x;
-    color: $tertiary;
+nav.post-controls button.create .d-icon {
+  color: $tertiary;
 }
-.discourse-no-touch .btn-flat:hover .d-icon
-{
+.discourse-no-touch .btn-flat:hover .d-icon {
   color: $tertiary;
 }
 .list-controls {
-    padding-top: 16px;
-    .combo-box .combo-box-header {
-      border: none;
-    }
-}
-.list-controls .category-breadcrumb li.bullet>.badge-category,
-.list-controls .nav-pills>li
-{
-    background: transparent !important;
+  padding-top: 16px;
+  .combo-box .combo-box-header {
     border: none;
+  }
+}
+.list-controls .category-breadcrumb li.bullet > .badge-category,
+.list-controls .nav-pills > li {
+  background: transparent !important;
+  border: none;
 }
 
 //not black backgrounds are back for not backgroundy things.
-.has-description, .no-description, 
+.has-description,
+.no-description,
 .user-main .about .secondary,
 .user-right .user-stream .item,
 select,
 .topic-list td,
 .category-list-item.category,
 .latest-topic-list,
-.topic-list>tbody>tr>td,
-.topic-post>article,
-#reply-control
-{
-    background-color: $header_background;
+.topic-list > tbody > tr > td,
+.topic-post > article,
+#reply-control {
+  background-color: $header_background;
 }
 
-.topic-post>article[id$="1"],
-.topic-post>article[id$="3"],
-.topic-post>article[id$="5"],
-.topic-post>article[id$="7"],
-.topic-post>article[id$="9"]
-{
-    background-color: $quaternary;
+.topic-post > article[id$="1"],
+.topic-post > article[id$="3"],
+.topic-post > article[id$="5"],
+.topic-post > article[id$="7"],
+.topic-post > article[id$="9"] {
+  background-color: $quaternary;
 }
-
 
 //tiger stripes, vertical...
 
-.user-main .staff-counters div a
-{
-    color: $primary;
+.user-main .staff-counters div a {
+  color: $primary;
 }
-.topic-list:not(.categories)>thead>tr>th,
-aside.quote .title, blockquote,
-.category-list>thead,
-.quote aside .quote, .quote aside .title, .quote aside blockquote, .quote aside .onebox, .quote aside .onebox-result
-{
-    background-color: $header_background;
+.topic-list:not(.categories) > thead > tr > th,
+aside.quote .title,
+blockquote,
+.category-list > thead,
+.quote aside .quote,
+.quote aside .title,
+.quote aside blockquote,
+.quote aside .onebox,
+.quote aside .onebox-result {
+  background-color: $header_background;
 }
-.topic-list .sortable
-.d-header .icons .icon,
-.topic-list:not(.categories)>thead>tr>th
-{
-    color: $tertiary;
+.topic-list .sortable .d-header .icons .icon,
+.topic-list:not(.categories) > thead > tr > th {
+  color: $tertiary;
 }
-.d-header::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    height: 5px;
-    width: 100%;
-    background: url($borders) top repeat-x;
+.d-header {
+  border-top: 0px solid transparent;
 }
 .topic-list .sortable:hover,
 .drop-down-visible .d-header .icons .active .icon,
 .d-header .icons .icon:hover {
-    background-color: $quaternary;
+  background-color: $quaternary;
 }
 
 //fade these elements to the background
@@ -132,8 +135,8 @@ change background color to black to match, change text color to white
 .uploaded-image-preview,
 .deleted-posts,
 .user-main .staff-counters,
-.topic-list, .topic-list>tbody>tr
-{
+.topic-list,
+.topic-list > tbody > tr {
   color: $primary;
   background-color: $header_background;
 }
@@ -143,52 +146,57 @@ BORDERS
 **/
 
 .topic-status-info {
-    border-top: none;
+  border-top: none;
 }
 
 .select-kit-collection {
-    border: 1px solid $tertiary;
+  border: 1px solid $tertiary;
 }
 
 .topic-avatar,
 #topic-closing-info,
 .topic-body,
-.small-action,
-{
-    border: none;
+.small-action {
+  border: none;
 }
 .topic-body {
-    border-left: 1px solid black;
+  border-left: 1px solid black;
 }
-.topic-post>article,
+.topic-post > article,
 .topic-list > tbody > tr,
 .category-list tbody tr,
-.latest-topic-list-item
-{
-    border-bottom: 1px solid black;
+.latest-topic-list-item {
+  border-bottom: 1px solid black;
 }
-aside.quote .title, blockquote,
-.quote aside .quote, .quote aside .title, .quote aside blockquote, .quote aside .onebox, .quote aside .onebox-result{
-    border-left-color: $tertiary;
+aside.quote .title,
+blockquote,
+.quote aside .quote,
+.quote aside .title,
+.quote aside blockquote,
+.quote aside .onebox,
+.quote aside .onebox-result {
+  border-left-color: $tertiary;
 }
-.nav-pills>li.active>a, .nav-pills>li>a.active,
-.nav-pills>li>a:hover {
+.nav-pills > li.active > a,
+.nav-pills > li > a.active,
+.nav-pills > li > a:hover {
   color: $tertiary;
   background-color: transparent;
 }
-.nav-pills>li.active>a, .nav-pills>li>a.active {
-    background-color: transparent;
+.nav-pills > li.active > a,
+.nav-pills > li > a.active {
+  background-color: transparent;
 }
 .spinner {
-    border:3px solid $tertiary;
-    border-right-color: transparent;
+  border: 3px solid $tertiary;
+  border-right-color: transparent;
 }
 .topic-list .topic-list-item-separator td {
-    border-bottom: 1px solid #046;
+  border-bottom: 1px solid #046;
 }
 .topic-list .topic-list-item-separator td span {
-    background-color: $quaternary;
-    color: #999;
+  background-color: $quaternary;
+  color: #999;
 }
 
 /**
@@ -196,17 +204,15 @@ Margins/Padding
 **/
 
 //add some padding to posts so that avatars are not on the side
-.topic-avatar
-{
-    padding-right: 10px;
+.topic-avatar {
+  padding-right: 10px;
 }
-.more-topics .btn.pull-right
-{
-    margin-right: 20px;
+.more-topics .btn.pull-right {
+  margin-right: 20px;
 }
 #list-area {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 .small-action {
-    padding-left: 56px;
+  padding-left: 56px;
 }
