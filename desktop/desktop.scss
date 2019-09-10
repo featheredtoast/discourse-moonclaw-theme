@@ -3,21 +3,20 @@
 .num.views,
 .num.age.activity,
 .topic-list-item .posters,
-.category-list.with-topics .latest
-{
-    background-color: $quaternary;
+.category-list.with-topics .latest {
+  background-color: $quaternary;
 }
 
 //no tiger stripes on topic list
 .latest-topic-list .num.posts-map.posts,
 .latest-topic-list .num.views,
 .latest-topic-list .num.age.activity {
-    background-color: $header_background;
+  background-color: $header_background;
 }
-.topic-post>article {
-    padding-left: 20px;
-    margin-right: 320px;
-    min-width: 712px;
+.topic-post > article {
+  padding-left: 20px;
+  margin-right: 320px;
+  min-width: 712px;
 }
 @media (max-width: 1124px) {
   .topic-body {
@@ -27,64 +26,58 @@
 .topic-status-info {
   max-width: 789px;
 }
-.topic-list>tbody,
-.category-list tbody tr:first-of-type
-{
-    border-top: none;
+.topic-list > tbody,
+.category-list tbody tr:first-of-type {
+  border-top: none;
 }
-.latest-topic-list .table-heading {
-    border-bottom: none;
+.latest-topic-list .table-heading,
+.category-list thead tr th {
+  border-bottom: none;
+  color: $primary;
 }
 
 .topic-list-item .main-link .link-top-line {
-    display: inline-block;
-    position: relative;
-    bottom: 12px;
+  display: inline-block;
+  position: relative;
+  bottom: 12px;
 }
 
 .topic-list-item .link-bottom-line {
-    padding-left: 55px;
+  padding-left: 55px;
 }
 .topic-list-item .main-link::before {
-    content: '';
-    display: inline-block;
-    height: 35px;
-    width: 50px;
-    background-repeat: no-repeat;
-    background-image: url($read);
+  content: "";
+  display: inline-block;
+  height: 35px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-image: url($read);
 }
 .topic-list-item.unseen-topic .main-link::before,
-.topic-list-item.new-posts .main-link::before
-{
-    background-image: url($unread);
+.topic-list-item.new-posts .main-link::before {
+  background-image: url($unread);
 }
 
-.topic-list-item.closed .main-link::before
-{
-    background-image: url($lock_read);
+.topic-list-item.closed .main-link::before {
+  background-image: url($lock_read);
 }
 .topic-list-item.closed.unseen-topic .main-link::before,
-.topic-list-item.closed.new-posts .main-link::before
-{
-    background-image: url($lock_unread);
+.topic-list-item.closed.new-posts .main-link::before {
+  background-image: url($lock_unread);
 }
 
-.topic-list-item.pinned .main-link::before
-{
-    background-image: url($sticky_read);
+.topic-list-item.pinned .main-link::before {
+  background-image: url($sticky_read);
 }
 .topic-list-item.pinned.unseen-topic .main-link::before,
-.topic-list-item.pinned.new-posts .main-link::before
-{
-    background-image: url($sticky_unread);
+.topic-list-item.pinned.new-posts .main-link::before {
+  background-image: url($sticky_unread);
 }
 
-.topic-list-item.closed.pinned .main-link::before
-{
-    background-image: url($lock_sticky_read);
+.topic-list-item.closed.pinned .main-link::before {
+  background-image: url($lock_sticky_read);
 }
 .topic-list-item.closed.pinned.unseen-topic .main-link::before,
-.topic-list-item.closed.pinned.new-posts .main-link::before
-{
-    background-image: url($lock_sticky_unread); 
+.topic-list-item.closed.pinned.new-posts .main-link::before {
+  background-image: url($lock_sticky_unread);
 }

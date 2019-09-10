@@ -28,6 +28,7 @@
 .topic-list thead tr th,
 .category-list thead tr th,
 .table-heading,
+.category-list tr,
 #reply-control.open .grippie,
 .btn,
 .btn:hover,
@@ -42,6 +43,7 @@
   @include moonclaw-background;
 }
 
+.category-list,
 .topic-list {
   border-collapse: separate;
 }
@@ -173,8 +175,8 @@ BORDERS
   border-left: 1px solid black;
 }
 .topic-post > article,
-.topic-list > tbody > tr,
-.category-list tbody tr,
+.topic-list > tbody > tr > td,
+.category-list tbody tr > td,
 .latest-topic-list-item {
   border-bottom: 1px solid black;
 }
@@ -225,4 +227,9 @@ Margins/Padding
 }
 .small-action {
   padding-left: 56px;
+}
+
+.category-list tbody tr > td {
+  color: $primary;
+  border-bottom: 1px solid $secondary !important;
 }

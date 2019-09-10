@@ -14,9 +14,12 @@
 #topic-footer-buttons {
   border-top: none;
 }
-.topic-list > tbody,
+.topic-list > tbody tr:first-child td,
 .category-list {
   border-top: 1px solid $tertiary;
+  .category-list-item {
+    border-top: 1px solid $secondary !important;
+  }
 }
 #navigation-bar {
   margin-bottom: 10px;
