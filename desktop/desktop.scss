@@ -31,7 +31,8 @@
   border-top: none;
 }
 .latest-topic-list .table-heading,
-.category-list thead tr th {
+.category-list thead tr th,
+.topic-list thead tr th {
   border-bottom: none;
   color: $primary;
 }
