@@ -39,6 +39,11 @@
 .d-header {
   @include moonclaw-background;
 }
+
+.select-kit.dropdown-select-box .dropdown-select-box-header {
+  @include moonclaw-background;
+}
+
 .topic-list thead tr th,
 .category-list thead tr th,
 .table-heading,
@@ -55,7 +60,8 @@
 .d-button-label,
 #create-topic,
 nav.post-controls button.create,
-nav.post-controls button.create .d-icon {
+nav.post-controls button.create .d-icon,
+.btn .d-icon {
   color: $tertiary;
 }
 .discourse-no-touch .btn-flat:hover .d-icon {
