@@ -1,7 +1,7 @@
 @mixin moonclaw-background() {
-  border: 1px solid transparent;
+  border: 6px solid transparent;
   border-image-source: url($borders);
-  border-image-slice: 3 1 fill;
+  border-image-slice: 8 1 fill;
   border-image-outset: 0;
   border-image-repeat: repeat stretch;
 }
