@@ -3,7 +3,7 @@
   border-image-source: url($borders);
   border-image-slice: 8 1 fill;
   border-image-outset: 0;
-  border-image-repeat: round stretch;
+  border-image-repeat: round;
 }
 
 .d-header::after {
