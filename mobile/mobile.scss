@@ -25,6 +25,9 @@
   border-width: 6px 0 0 0;
   border-image-outset: 1;
 }
+.topic-list > tbody > tr:nth-child(2) td {
+  border-top: 1px solid $secondary;
+}
 #navigation-bar {
   margin-bottom: 10px;
 }
