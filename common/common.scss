@@ -233,3 +233,7 @@ Margins/Padding
   color: $primary;
   border-bottom: 1px solid $secondary !important;
 }
+
+.select-kit.combo-box.category-drop .category-drop-header {
+  min-height: 42px;
+}
