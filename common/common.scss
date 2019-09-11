@@ -43,6 +43,10 @@
   @include moonclaw-background;
 }
 
+#topic-progress {
+  border: 1px solid $secondary;
+}
+
 .category-list,
 .topic-list {
   border-collapse: separate;

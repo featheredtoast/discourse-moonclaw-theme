@@ -1,5 +1,9 @@
-#reply-control {
-  border-top: 1px solid $tertiary;
+@mixin moonclaw-background() {
+  border: 6px solid transparent;
+  border-image-source: url($borders);
+  border-image-slice: 8 1 fill;
+  border-image-outset: 0;
+  border-image-repeat: round;
 }
 .list-controls {
   padding-top: 4px;
@@ -14,12 +18,15 @@
 #topic-footer-buttons {
   border-top: none;
 }
+.topic-list {
+  @include moonclaw-background;
+  border-image-slice: 8 1;
+  border-width: 6px 0 0 0;
+  border-image-outset: 1;
+}
 .topic-list > tbody tr:first-child td,
-.category-list {
-  border-top: 1px solid $tertiary;
-  .category-list-item {
-    border-top: 1px solid $secondary !important;
-  }
+.category-list .category-list-item {
+  border-top: 0px;
 }
 #navigation-bar {
   margin-bottom: 10px;
