@@ -82,3 +82,8 @@
 .topic-list-item.closed.pinned.new-posts .main-link::before {
   background-image: url($lock_sticky_unread);
 }
+
+.post-notice {
+  margin-left: -10px;
+  max-width: calc(690px + 76px - 0.1em);
+}
