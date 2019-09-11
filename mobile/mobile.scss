@@ -18,15 +18,12 @@
 #topic-footer-buttons {
   border-top: none;
 }
-.topic-list {
+.category-list .category-list-item,
+.topic-list > tbody > tr:first-child td {
   @include moonclaw-background;
   border-image-slice: 8 1;
   border-width: 6px 0 0 0;
   border-image-outset: 1;
-}
-.topic-list > tbody tr:first-child td,
-.category-list .category-list-item {
-  border-top: 0px;
 }
 #navigation-bar {
   margin-bottom: 10px;
