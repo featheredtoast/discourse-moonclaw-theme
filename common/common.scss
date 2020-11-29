@@ -101,6 +101,7 @@ select,
   background-color: $header_background;
 }
 
+//deterministic tiger striping. using nth child could 'flip' how the stripes go
 .topic-post > article[id$="1"],
 .topic-post > article[id$="3"],
 .topic-post > article[id$="5"],
@@ -173,6 +174,9 @@ BORDERS
   border: none;
 }
 .topic-post > article,
+.topic-body {
+  border-left: 1px solid black;
+}
 .topic-list > tbody > tr:not[class="last-visit"] > td,
 .category-list tbody tr > td,
 .latest-topic-list-item {
