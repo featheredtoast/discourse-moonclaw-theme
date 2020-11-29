@@ -172,11 +172,8 @@ BORDERS
 .small-action {
   border: none;
 }
-.topic-body {
-  border-left: 1px solid black;
-}
 .topic-post > article,
-.topic-list > tbody > tr > td,
+.topic-list > tbody > tr:not[class="last-visit"] > td,
 .category-list tbody tr > td,
 .latest-topic-list-item {
   border-bottom: 1px solid black;
@@ -205,7 +202,9 @@ blockquote,
   border-right-color: transparent;
 }
 .topic-list .topic-list-item-separator td {
-  border-bottom: 1px solid #046;
+  background-color: #046;
+  line-height: 0.01em;
+  border-bottom: 0px;
 }
 .topic-list .topic-list-item-separator td span {
   background-color: $quaternary;
