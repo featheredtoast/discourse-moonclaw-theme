@@ -37,22 +37,33 @@
   color: $primary;
 }
 
-.topic-list-item .main-link .link-top-line {
-  display: inline-block;
-  position: relative;
-  bottom: 12px;
+.topic-list-item .main-link {
+  display: grid;
+  grid-template-areas:
+    "topic-status-image top-line"
+    "topic-status-image exerpt"
+    "topic-status-image bottom-line";
+  grid-template-rows: auto;
+  grid-template-columns: 50px auto;
+  .link-top-line {
+    grid-area: top-line;
+  }
+  .link-bottom-line {
+    grid-area: bottom-line;
+  }
+  .topic-exerpt {
+    grid-area: exerpt;
+  }
 }
 
-.topic-list-item .link-bottom-line {
-  padding-left: 55px;
-}
 .topic-list-item .main-link::before {
   content: "";
   display: inline-block;
   height: 35px;
-  width: 50px;
+  width: 35px;
   background-repeat: no-repeat;
   background-image: url($read);
+  grid-area: topic-status-image;
 }
 .topic-list-item.unseen-topic .main-link::before,
 .topic-list-item.new-posts .main-link::before {

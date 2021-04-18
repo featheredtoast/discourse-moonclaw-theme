@@ -1,10 +1,4 @@
-@mixin moonclaw-background() {
-  border: 6px solid transparent;
-  border-image-source: url($borders);
-  border-image-slice: 8 1 fill;
-  border-image-outset: 0;
-  border-image-repeat: round;
-}
+@import "mixins";
 
 .d-header::after {
   align-self: flex-end;
